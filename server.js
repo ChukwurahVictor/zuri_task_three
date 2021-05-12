@@ -24,6 +24,10 @@ db.on('error', error => {
 })
 
 //Set up Routes
+app.use('/', async(req, res) => {
+   res.send('Go to /users')
+})
+
 app.use('/users', require('./routes/users'));
 
 //Error Handling
