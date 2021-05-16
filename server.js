@@ -24,7 +24,7 @@ db.on('error', error => {
 })
 
 //Set up Routes
-app.use('/', async(req, res) => {
+app.get('/', async(req, res) => {
    res.send('Go to /users')
 })
 
